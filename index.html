@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+
+    <title>Виталя Гора</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- https://getbootstrap.com -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- https://grsmto.github.io/simplebar/ -->
+    <link rel="stylesheet" href="css/simplebar.css">
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@2.4.3/dist/simplebar.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+  </head>
+  <body>
+
+    <div class="container">
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#profile">Профиль</a></li>
+        <li><a data-toggle="tab" href="#friends">Друзья пользователя</a></li>
+      </ul>
+        
+      <div class="tab-content col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div id="profile" class="tab-pane fade in active">
+          <div class="row">
+            <div class="photo col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <div class="userpic"></div>
+              <input type="button" class="btn btn-warning" id="btnAddToFriend" value = "Добавить в друзья" />
+            </div>
+            <div class="userinfo col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                <div class="username">Виталя Гора</div>
+                <div class="user-city">г. Нижние Шахты</div>
+              <div class="info">
+                <table class="table about">
+                  <tr><th>Семейное положение</th><td>холост</td></tr>
+                  <tr><th>Телефон</th><td><div class="phone-link">+7(440)554-32-12</div></td></tr>
+                  <tr><th>E-mail</th><td><div class="email-link">vitalya@gora.ru</div></td></tr>
+                </table>
+              <div class="interest-block">
+                  <h3>Интересы</h3>
+                  <div class="interest-container">
+                    <input type="button" class="btn btn-default interest" value="музыка" />
+                    <input type="button" class="btn btn-default interest" value="компьютеры" />
+                    <input type="button" class="btn btn-default interest" value="радио" />
+                  </div>
+                  <form id="interest-input-form">
+                    <input type="text" class="form-control interest-field" maxlength="24" placeholder="Введите интерес" id="interestField" />
+                    <input type="button" class="btn btn-success" value="Добавить интерес" id="btnAddItem" />
+                  </form>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div id="friends" class="tab-pane fade">
+          <div class="friendlist scroll-block" data-simplebar>
+            <div class="friend col-lg-6 col-md-6 col-sm-6 col-sm-12">
+              <img src="images/lion.png" alt= "Лев Бронштейн" />
+              <a href="#">Лев Бронштейн</a>
+              <p class="city">г. Ханты-Мансийск</p>
+              <div class="status">Online</div>
+            </div>
+            <div class="friend col-lg-6 col-md-6 col-sm-6 col-sm-6 col-xs-12">
+              <img src="images/nahodka.png" alt="Находка Капитал" />
+              <a href="#">Находка Капитал</a>
+              <p class="city">г. Усть-Бельск</p>
+              <div class="status"></div>
+            </div>
+            <div class="friend col-lg-6 col-md-6 col-sm-6 col-sm-6 col-xs-12">
+              <img src="images/yandex.png" alt="Яндекс Петренко" />
+              <a href="#">Яндекс Петренко</a>
+              <p class="city">г. Пермь</p>
+              <div class="status"></div>
+            </div>
+            <div class="friend col-lg-6 col-md-6 col-sm-6 col-sm-6 col-xs-12">
+              <img src="images/uspeh.png" alt="Успех Возможностей" />
+              <a href="#">Успех Возможностей</a>
+              <p class="city">г. Радонеж</p>
+              <div class="status">Online</div>
+            </div>
+            <div class="friend col-lg-6 col-md-6 col-sm-6 col-sm-6 col-xs-12">
+              <img src="images/inna.png" alt="Инна Нашлась" />
+              <a href="#">Инна Нашлась</a>
+              <p class="city">г. Омск</p>
+              <div class="status">Online</div>
+            </div>
+            <div class="friend col-lg-6 col-md-6 col-sm-6 col-sm-6 col-xs-12">
+              <img src="images/alla.png" alt="Алла Подольская" />
+              <a href="#">Алла Подольская</a>
+              <p class="city">г. Петропавловск-Камчатский</p>
+              <div class="status">Online</div>
+            </div>
+            <div class="friend col-lg-6 col-md-6 col-sm-6 col-sm-6 col-xs-12">
+              <img src="images/lion.png" alt="Лев Бронштейн" />
+              <a href="#">Лев Бронштейн</a>
+              <p class="city">г. Ханты-Мансийск</p>
+              <div class="status">Online</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+
+  </body>
+
+</html>
